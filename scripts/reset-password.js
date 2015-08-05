@@ -5,6 +5,8 @@ var nodemailer = require('nodemailer'),
 
 var transporter = nodemailer.createTransport(config.mailer.options);
 var link = 'reset link here'; // PUT reset link here
+var transporter1 = nodemailer.createTransport(config.mailer.options);
+var link1 = 'reset link here'; // PUT reset link here
 
 mg.connect(function(db) {
 	var User = mongoose.model('User');
